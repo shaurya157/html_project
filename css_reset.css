@@ -1,0 +1,25 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #FEFFB7;
+}
+
+h1 {
+  font-size: 38px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+.ingredient-list {
+  list-style: square;
+}
+
+ol {
+  list-style: georgian;
+}
+
+header > img {
+  width: 100px;
+}
