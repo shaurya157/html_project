@@ -8,6 +8,7 @@ body {
 
 h1 {
   font-size: 38px;
+  margin-bottom: 10px;
 }
 
 h2 {
@@ -17,6 +18,7 @@ h2 {
 ul li a, figcaption a {
   text-decoration: none;
   color: inherit;
+  float: left;
 }
 
 header > img {
@@ -42,7 +44,6 @@ input[type="radio"] {
     height: 27px;
     background-image: url(stars.png);
     vertical-align: bottom;
-    display: inline-block;
 }
 
 input[type="radio"]:checked {
@@ -60,6 +61,7 @@ input:last-child:hover {
 
 ol li:nth-of-type(2n) {
   background-color: whitesmoke;
+  margin: 10px 0;
 }
 
 /* Box model */
@@ -88,9 +90,16 @@ aside {
 img {
   display: inline-block;
 }
+
 nav {
-  display: inline-block;
+  float:right;
 }
+
+/*nav:after {
+  content: "";
+  display: block;
+  clear: both;
+}*/
 
 aside ul li {
   padding: 15px;
