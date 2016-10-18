@@ -1,9 +1,6 @@
-/*Advance selectors*/
 body {
   font-family: Arial, sans-serif;
   background-color: #FEFFF1;
-  margin: 0 auto;
-  width: 900px;
 }
 
 h1 {
@@ -18,14 +15,15 @@ h2 {
 ul li a, figcaption a {
   text-decoration: none;
   color: inherit;
-  float: left;
 }
 
 header > img {
   width: 100px;
+  float: left;
 }
 
 .ingredients-list {
+
   list-style: square inside;
 }
 
@@ -51,7 +49,7 @@ input[type="radio"]:checked {
 }
 
 
-input:last-child {
+input[type="submit"]:last-child {
     background: gold;
 }
 
@@ -64,61 +62,50 @@ ol li:nth-of-type(2n) {
   margin: 10px 0;
 }
 
-/* Box model */
-
-nav ul li {
-  display: inline-block;
-}
-
-nav ul li a {
-  display: inline-block;
-  padding: 20px;
-}
-
-section {
-    width: 700px;
-    display: inline-block;
-    vertical-align: top;
-}
-
-aside {
-    width: 180px;
-    margin-right: 15px;
-    display: inline-block;
-}
-
-img {
-  display: inline-block;
+h2 + .user_review {
+    border-top: 1px solid black;
 }
 
 nav {
-  float:right;
+    float: right;
 }
 
-/*nav:after {
-  content: "";
-  display: block;
-  clear: both;
-}*/
-
-aside ul li {
-  padding: 15px;
+nav ul li {
+    display: inline-block;
 }
 
-ol li {
-  padding: 15px;
+nav ul li a {
+    padding: 20px;
+    display: block;
 }
 
-input[type="text"], select, textarea {
-  display: block;
-  width: 175px;
+body {
+  margin: 0 auto;
+    width: 60%;
+}
+
+aside {
+    display: inline-block;
+}
+
+.ingredients-list li {
+    margin: 15px 0px;
+}
+
+input[type="text"], select {
+    display: block;
+    width: 175px;
 }
 
 select {
-  margin: 10px 0;
-  width: 180px;
+    margin: 10px 0;
+    width: 180px;
 }
 
 textarea {
-  width: 350px;
+    width: 350px;
+}
+
+label {
+    display: block;
 }
